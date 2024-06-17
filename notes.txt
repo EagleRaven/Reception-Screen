@@ -1,0 +1,10 @@
+Things to do:
+    Round the temperature to 0 decimal places - completed
+    Get the carousel to work
+    Get remote desktop working - get it working on another network
+    Get multiple city working with API
+    Get Icons to work in app
+    Set up ERG Github. Use grant@glendevonmarine.com - completed
+
+
+    

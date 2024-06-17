@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reception</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-ZMCaIq7wH1Knfg83uZLz8o/tuT1kZ6BlN/hPDyl2Lw1I4iJkZo6Ag4l54GzqOXQMbPdJagbk6P+x5G7X0cKcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--FONTS-->
+        <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"> -->
+    </head>
+
+    <body>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="zY1wesza"></script>
+
+        <div class="wrapper">
+            
+            <!--LEFT COLUMN-->
+            <div class="left-col">
+                <p id="date" class="dateTime"></p>
+                <br>
+                <p id="time" class="dateTime"></p>
+                <div class="welcome">
+                    <p id="welcome"><span id="welcome-to">Welcome to</span> <br><span id="eagle">eagle raven global</span></p>
+                </div>
+                
+                <div class="tagline">Juneau, Delivered.</div>
+
+            </div>
+            
+            <!--RIGHT COLUMN-->
+            <div class="right-col">
+                <div class="box-wrapper">
+                    <!--WEATHER BOX-->
+                    <div class="boxes" id="weather-box">
+                        <!--CITIES IN GRID ROWS-->
+                        <div class="cities">
+                            <div id="juneau" class="city">
+                                <div id="juneau-name" class="name"></div>
+                                <div id="juneau-temp" class="temp"></div>
+                                <!-- <div id="juneau-weather" class="condition"></div> -->
+                                <div id="juneau-icon" class="icon"></div>
+                            </div>
+                            <div id="ketchikan" class="city">
+                                <div id="ketchikan-name" class="name"></div>
+                                <div id="ketchikan-temp" class="temp"></div>
+                                <!-- <div id="ketchikan-weather" class="condition"></div> -->
+                                <div id="ketchikan-icon" class="icon"></div>
+                            </div>
+                            <div id="anchorage" class="city">
+                                <div id="anchorage-name" class="name"></div>
+                                <div id="anchorage-temp" class="temp"></div>
+                                <!-- <div id="anchorage-weather" class="condition"></div> -->
+                                <div id="anchorage-icon" class="icon"></div>
+                            </div>
+                            <div id="seattle" class="city">
+                                <div id="seattle-name" class="name"></div>
+                                <div id="seattle-temp" class="temp"></div>
+                                <!-- <div id="seattle-weather" class="condition"></div> -->
+                                <div id="seattle-icon" class="icon"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--FLIGHT BOX-->
+                    <div class="boxes" id="flight-box">
+                        <div id ="flight-info">
+                            <p class="flight-heading">Departures</p>
+                            <iframe src="https://www.flightera.net/en/widgets/airport?iata=jnu&depArr=dep&nrFlights=3&airlineIata=alaska" width="700" height="266" style="border:none"></style> ></iframe>
+                            <p class="flight-heading">Arrivals</p>
+                            <iframe src="https://www.flightera.net/en/widgets/airport?iata=jnu&depArr=arr&nrFlights=3&airlineIata=alaska" width="700" height="266" style="border:none"></style>></iframe>
+                        </div>
+                    </div>
+
+                    <!--NEWS BOX-->
+                    <div class="boxes" id="news-box">
+                        <!-- <rssapp-carousel id="9zcNdAXVxKR8vdjK"></rssapp-carousel><script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script> -->
+                        <!-- <script type="text/javascript" src="https://www.juicer.io/embed/https-www-juneauempire-com-feed/embed-code.js" async defer></script> -->
+                        <div class="carousel">
+                            <img class="slide" src="/images/istockphoto-1393681409-612x612.jpg">
+                            <img class="slide" src="/images/istockphoto-861328780-612x612.jpg">
+                            <img class="slide" src="/images/image1.jpg">
+                            <img class="slide" src="/images/istockphoto-614124474-612x612.jpg">
+                            <img class="slide" src="/images/istockphoto-861007518-612x612.jpg">
+                        </div>
+
+                    </div>
+
+                    <!--COMPANY INFO BOX-->
+                    <div class="boxes" id="company-box">
+                        <p id ="view">View Of Downtown</p>
+                        <div id="webcamid" class="webcam">
+                            <!-- <iframe id="cam" src="http://webcams.thesnowcloud.com/#new_tab" width="600" height="500" frameborder="0"></iframe> -->
+                            <a name="windy-webcam-timelapse-player" data-id="1680336050" data-play="day" href="https://windy.com/webcams/1680336050" target="_blank">Juneau</a><script async type="text/javascript" src="https://webcams.windy.com/webcams/public/embed/script/player.js" autoplay></script>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="stripeOne" class="stripe"></div>
+                <div id="stripeTwo" class="stripe"></div>
+                <div id="stripeThree" class="stripe"></div>
+
+
+                <!--ERG LOGO-->
+                <div class="erg-image">
+                    <img src="/Assets/Eagle_Raven_Global_Logo_FINAL_Full_Color_Grey_Shield-02_1200x1200.png">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="image.js"></script>
+        <!-- <script src="cam.js"></script> -->
+        <script src="weather-api.js" async defer type="text/javascript"></script>
+        <script src="refresh.js"></script>
+        <script src="datetime.js"></script>
+        <!-- <script src="typew.js" async defer type="text/javascript"></script> -->
+        <script src="animation.js" async defer type="text/javascript"></script>
+        <script src="flight-api.js" async defer type="text/javascript"></script>
+        <!-- <script src="webcam-api.js" async defer type="text/javascript"></script> -->
+    </body>
+</html>
+
+
+
+
+
+<!-- 
+\nExpected output is: [[\"James\", \"Stewart\", \"Vertigo\", 1958], [\"Deborah\", \"Kerr\", \"The Innocents \", 1962], [\"Peter\", \"OToole\", \"Lawrence of Arabia\", 1962], [\"Robert\", \"De Niro\", \"The Deer Hunter\", 1979], [\"F.Murray\", \"Abraham\", \"Amadeus\", 1985], [\"Harrison\", \"Ford\", \"Blade Runner\", 1982], [\"Jack\", \"Nicholson\", \"Chinatown \", 1974], [\"Woody\", \"Allen\", \"Annie Hall\", 1977], [\"Claire\", \"Danes\", \"Princess Mononoke \", 2001], [\"Jon\", \"Voight\", \"Deliverance\", 1982], [\"Christian\", \"Bale\", \"The Prestige\", 2006], [\"Maggie\", \"Gyllenhaal\", \"Donnie Darko\", 2001], [\"Dev\", \"Patel\", \"Slumdog Millionaire\", 2009], [\"Sigourney\", \"Weaver\", \"Aliens\", 1986]]\
+
+nYour output is: [[\"James\", \"Stewart\", \"Vertigo\", \"1958-08-24\"], [\"Deborah\", \"Kerr\", \"The Innocents \", \"1962-02-19\"], [\"Peter\", \"OToole\", \"Lawrence of Arabia\", \"1962-12-11\"], [\"Robert\", \"De Niro\", \"The Deer Hunter\", \"1979-03-08\"], [\"F.Murray\", \"Abraham\", \"Amadeus\", \"1985-01-07\"], [\"Harrison\", \"Ford\", \"Blade Runner\", \"1982-09-09\"], [\"Jack\", \"Nicholson\", \"Chinatown \", \"1974-08-09\"], [\"Woody\", \"Allen\", \"Annie Hall\", \"1977-04-20\"], [\"Claire\", \"Danes\", \"Princess Mononoke \", \"2001-10-19\"], [\"Kevin\", \"Spacey\", \"Beyond the Sea\", \"2004-11-26\"], [\"Jon\", \"Voight\", \"Deliverance\", \"1982-10-05\"], [\"Christian\", \"Bale\", \"The Prestige\", \"2006-11-10\"], [\"Maggie\", \"Gyllenhaal\", \"Donnie Darko\", \"2001-01-19\"], [\"Dev\", \"Patel\", \"Slumdog Millionaire\", \"2009-01-09\"], [\"Sigourney\", \"Weaver\", \"Aliens\", \"1986-08-29\"]]\n"  -->
